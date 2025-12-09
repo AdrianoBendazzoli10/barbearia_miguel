@@ -1,0 +1,112 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendar | Miguel Cort's</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>✂ Miguel Cort's</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="agendar.html" style="font-weight:bold;">Agendar</a>
+        <a href="index.html#sobre">Sobre Nós</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+    </nav>
+</header>
+
+
+<section class="servico-page">
+    <h2>Escolha seu serviço</h2>
+
+    <div class="servico-cards">
+        <div class="card"><h3>Corte Masculino</h3><p>R$ 30,00</p><button onclick="agendar('Corte Masculino')">Agendar</button></div>
+        <div class="card"><h3>Barba Completa</h3><p>R$ 25,00</p><button onclick="agendar('Barba Completa')">Agendar</button></div>
+        <div class="card"><h3>Corte + Barba</h3><p>R$ 50,00</p><button onclick="agendar('Corte + Barba')">Agendar</button></div>
+        <div class="card"><h3>Sobrancelha</h3><p>R$ 10,00</p><button onclick="agendar('Sobrancelha')">Agendar</button></div>
+    </div>
+
+    <a href="index.html" class="btn-voltar-home">Voltar ao início</a>
+</section>
+
+<script>
+function agendar(servico){
+    let msg = `Olá! Gostaria de agendar um horário para: ${servico}`;
+    window.open(`https://wa.me/11966314620?text=${encodeURIComponent(msg)}`,"_blank");
+}
+</script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar | Barbearia Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>✂ Barbearia Premium</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="agendar.html" style="font-weight:bold;">Agendar</a>
+        <a href="index.html#sobre">Sobre Nós</a>
+        <a href="index.html#avaliacoes">Avaliações</a>
+        <a href="index.html#perfil">Meu Perfil 👤</a>
+    </nav>
+</header>
+
+<section class="servico-page">
+    <h2>Escolha seu serviço</h2>
+
+    <div class="servico-cards">
+
+        <div class="card">
+            <h3>Corte Masculino</h3>
+            <p>R$ 30,00</p>
+            <button onclick="agendar('Corte Masculino')">Agendar</button>
+        </div>
+
+        <div class="card">
+            <h3>Barba Completa</h3>
+            <p>R$ 25,00</p>
+            <button onclick="agendar('Barba Completa')">Agendar</button>
+        </div>
+
+        <div class="card">
+            <h3>Corte + Barba</h3>
+            <p>R$ 50,00</p>
+            <button onclick="agendar('Corte + Barba')">Agendar</button>
+           
+        </div>
+
+        <div class="card">
+            <h3>Sombrancelha</h3>
+            <p>R$ 10,00</p>
+            <button onclick="agendar('Sombrancelha')">Agendar</button>
+        </div>
+        <a href="index.html" class="btn-voltar-home">Voltar para o início</a>
+    </div>
+</section>
+<script >
+    function agendar(servico){
+    let msg = `Olá! Gostaria de agendar um horário para: ${servico}`;
+    let url = `https://wa.me/11966314620?text=${encodeURIComponent(msg)}`;
+
+    window.open(url, "_blank"); // abre o WhatsApp
+}
+
+</script>
+</body>
+</html>
+>>>>>>> 4e1783692f1d792bc566b9668415563121fdd11a
